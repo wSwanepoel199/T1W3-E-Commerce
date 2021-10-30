@@ -1,0 +1,39 @@
+@mixin flexCenter($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;    
+}
+
+.nav-header {
+  border: dotted;
+  border-color: blue;
+  width: 100vw;
+  height: 10vh;
+  overflow:hidden;
+  background-color: $primary-color;
+  @include flexCenter(center, center);
+
+   nav{
+     width:100vw;
+     div{
+      @include flexCenter(space-around, center);
+     }
+  }
+}
+
+
+.landing{
+
+  @include flexCenter(center, center);
+
+  border: dotted;
+  border-color: red;
+  width: 100%;
+  height: 90vh;
+  flex-direction: column;
+  overflow: hidden;
+
+  h1{
+    color: $primary-color;
+  }
+}
