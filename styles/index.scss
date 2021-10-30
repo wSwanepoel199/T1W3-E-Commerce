@@ -14,10 +14,10 @@
   @include flexCenter(center, center);
 
    nav{
-     width:100vw;
-     div{
+    div{
       @include flexCenter(space-around, center);
-     }
+      width:100vw;
+    }
   }
 }
 
