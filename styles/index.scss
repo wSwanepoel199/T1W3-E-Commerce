@@ -4,11 +4,17 @@
   align-items: $align;    
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
 .nav-header {
   border: dotted;
   border-color: blue;
   width: 100vw;
-  height: 10vh;
+  height: 9vh;
   overflow:hidden;
   background-color: $primary-color;
   @include flexCenter(center, center);
@@ -32,6 +38,7 @@
   height: 90vh;
   flex-direction: column;
   overflow: hidden;
+  align-content: center;
 
   h1{
     color: $primary-color;

@@ -1,8 +1,38 @@
-.item-selection{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img{
-    width: 90vw;
+@media screen and (min-width: 600px){
+  .item-selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .item-selection img{
+    width: 300px;
+    margin: 3.338%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .item-selection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .item-selection img{
+    width: 80vh;
+    max-width: 300px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .item-selection .responsive:before {
+    content: attr(data-alt);
+    overflow: hidden;
+  }
+  .item-selection .responsive img{
+    display: none;
   }
 }
